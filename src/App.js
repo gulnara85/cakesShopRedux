@@ -1,7 +1,5 @@
 import React from 'react';
 import './App.css';
-import { useEffect } from 'react';
-
 import {
   BrowserRouter as Router,
   Routes,
@@ -11,9 +9,6 @@ import {
 import Cart from './components/cart/Cart';
 import Menu from "./components/Menu";
 import About from './components/About';
-import { HashLink } from 'react-router-hash-link';
-
-import {useState} from 'react';
 import { useSelector } from "react-redux";
 import { getTotalQuantity } from "./components/redux/CartSlice";
 import image from './cart.png'
@@ -23,11 +18,6 @@ import ContactUs from './ContactUs';
 function App() {
 
   const totalQuantity = useSelector (getTotalQuantity);
-
-  const [isShown, setIsShown] = useState(false);
-  const handleClick = event => {
-    setIsShown(current => !current);
-  }
 
   return (
 <div>
@@ -43,7 +33,7 @@ function App() {
       <Link to='/' className='link'>About</Link>
       <Link to='/cakes' className='link'>Menu</Link>
       <Link to='/contactUs' className='link'>Contact Us</Link>
-      <Link to='/cart' className='link'> <p className='totalItems'> {totalQuantity}</p><img onClick={handleClick} className="cartIcon" src={image}/> </Link>
+      <Link to='/cart' className='link'> <p className='totalItems'> {totalQuantity}</p><img className="cartIcon" src={image}/> </Link>
     </nav>
 
     
