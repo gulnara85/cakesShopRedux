@@ -1,38 +1,118 @@
-.App {
-  text-align: center;
+.images {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.cakesText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 25%;
+    text-align: center;
+    margin-left: 35px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.btn {
+    margin-right: 25px;
+    padding: 15px;
+    width: 28%;
+    text-align: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+    
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  input {
+    margin: 10px;
+    padding: 8px;
+    width: 30%;
+    border: none;
+    color: white;
   }
-  to {
-    transform: rotate(360deg);
+  .message {
+    height: 50px;
   }
-}
+  .submit {
+    padding: 5px;
+    width: 100px;
+    border: 1px black solid;
+    background-color: #99A799;
+    color: black;
+    margin-bottom: 45px;
+  }
+
+  button {
+    padding: 8px;
+    margin: 5px;
+    background-color: #99A799;
+    color: black;
+    border: none;
+    border: 1px black solid;
+    font-weight: bold;
+    font-family: 'Noto Serif', serif;
+  }
+  header {
+    background-color: #99A799;
+    color: black;
+    text-align: center;
+  }
+  h1,h2,h3,h4, p {
+    font-family: 'Noto Serif', serif;;
+  }
+
+  .totalCart {
+    text-align: center;
+    margin-bottom: 0;
+    margin: 0;
+  }
+  .myCartItems {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    align-items:center;
+    border: 1px solid black;
+  }
+  .itemsInCart {
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 0;
+    
+  }
+  
+  .totalItems {
+    text-align: center;
+    margin: 0;
+  }
+  .contact-us {
+    text-align: center;
+  }
+
+  @media all and (max-width:500px) {
+    .images{
+      flex-direction: column;
+      align-items: center;
+    }
+    .aboutImage {
+      width: 180px;
+      height: 230px;
+    }
+    .cakesText {
+      width: 75%;
+      margin-left: 0;
+    }
+    .btn {
+      width: 75%;
+      margin-right: 0;
+    }
+    input {
+      width: 75%;
+    }
+    .order {
+      text-align: center;
+      font-size: 15px;
+    }
+  }
+ 

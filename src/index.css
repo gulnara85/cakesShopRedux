@@ -1,13 +1,87 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color:#FEF5ED;
+}
+nav {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  font-family: 'Noto Serif', serif;
+  background-color: #99A799;
+  overflow: hidden;
+  z-index: 1;
+  position: fixed;
+  width: 100%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.link {
+  padding: 0px 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight:bolder;
+  color: black;
 }
+
+.container {
+  display: flex;
+  justify-content: center;
+  
+}
+.mainContainer {
+  display: flex;
+  justify-content: space-around;
+}
+.picture {
+  width: 300px;
+  height: 330px;
+}
+.categories {
+ display: flex;
+ justify-content:center;
+ font-family: 'Noto Serif', serif;
+}
+.cakesPosition {
+  display : flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom:100px ;
+}
+
+.allCakes {
+  margin-top: 70px;
+  margin-right: 25px;
+}
+
+.discription {
+  text-align: center;
+}
+
+.categoryButtonSelected{
+  background-color: #99A799;
+  
+}
+.categoryButton:hover {
+  background-color: #fdeb6b;
+}
+
+.categoryButton {
+  cursor: pointer;
+  margin: 5px;
+  padding: 5px;
+}
+.icon {
+  width: 20px;
+}
+.cartIcon{
+  width: 35px;
+  margin: 0;
+  margin-top: 0;
+}
+
+
+
+
+
+
+
+
+
